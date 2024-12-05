@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Container } from './Container';
 import { Button } from '../ui/Button';
 import { Menu, Phone } from 'lucide-react';
 import { MobileMenu } from './MobileMenu';
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#listings", label: "Listings" },
-  { href: "#about", label: "About" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#resources", label: "Resources" },
-  { href: "#contact", label: "Contact" }
+  { href: "/services", label: "Services" },
+  { href: "/listings", label: "Listings" },
+  { href: "/about", label: "About" },
+  { href: "/testimonials", label: "Testimonials" },
+  { href: "/resources", label: "Resources" },
+  { href: "/contact", label: "Contact" }
 ];
 
 export function Header() {
@@ -20,19 +21,19 @@ export function Header() {
     <header className="py-4 bg-white shadow-sm fixed w-full top-0 z-50">
       <Container>
         <div className="flex items-center justify-between">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src="/logo.svg" alt="Suzanne Austin" className="h-12 w-auto" />
-          </a>
+          </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a 
+              <Link
                 key={link.href}
-                href={link.href} 
+                to={link.href} 
                 className="text-gray-600 hover:text-primary-600 transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
 

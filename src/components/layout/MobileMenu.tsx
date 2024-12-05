@@ -1,51 +1,57 @@
 import React from 'react';
-import { X, Phone } from 'lucide-react';
-import { Button } from '../ui/Button';
-import { useScrollLock } from '../../hooks/useScrollLock';
+import { Link } from 'react-router-dom';
+import { X } from 'lucide-react';
 
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
-  links: Array<{ href: string; label: string; }>;
+  links: { href: string; label: string }[];
 }
 
 export function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) {
-  useScrollLock(isOpen);
-  
-  if (!isOpen) return null;
-
   return (
-    <div className="fixed inset-0 z-50 md:hidden">
-      <div className="fixed inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
-      <div className="fixed right-0 top-0 h-full w-[280px] bg-white p-6 shadow-xl">
-        <div className="flex justify-end mb-8">
+    <div 
+      className={`
+        fixed inset-0 z-50 bg-white transform transition-transform duration-300 ease-in-out
+        ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+      `}
+    >
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex justify-between items-center mb-12">
+          <img 
+            src="/logo.svg" 
+            alt="Suzanne Austin" 
+            className="h-12 w-auto" 
+          />
           <button 
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            className="p-2 hover:bg-gray-100 rounded-lg"
             aria-label="Close menu"
           >
-            <X className="w-6 h-6" />
+            <X className="w-8 h-8 text-gray-600" />
           </button>
         </div>
 
-        <nav className="space-y-4">
+        <nav className="space-y-6">
           {links.map((link) => (
-            <a 
+            <Link
               key={link.href}
-              href={link.href} 
-              className="block text-lg text-gray-600 hover:text-primary-600 transition-colors"
+              to={link.href}
               onClick={onClose}
+              className="block text-2xl font-semibold text-gray-800 hover:text-primary-600 transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
-        <div className="mt-8">
-          <Button className="w-full justify-center">
-            <Phone className="w-4 h-4 mr-2" />
-            (704) 819-0620
-          </Button>
+        <div className="mt-12">
+          <a 
+            href="tel:7048190620"
+            className="block text-center bg-primary-500 text-white py-4 rounded-lg text-xl hover:bg-primary-600 transition-colors"
+          >
+            Call (704) 819-0620
+          </a>
         </div>
       </div>
     </div>
