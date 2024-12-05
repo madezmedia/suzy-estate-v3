@@ -1,0 +1,15 @@
+<svg width="200" height="48" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- SA Monogram -->
+    <path d="M12 8C17.4183 8 22 12.5817 22 18C22 23.4183 17.4183 28 12 28C6.58172 28 2 23.4183 2 18C2 12.5817 6.58172 8 12 8Z" fill="#e96840"/>
+    <path d="M15 15.5C15 14.1193 13.8807 13 12.5 13H9.5C8.11929 13 7 14.1193 7 15.5C7 16.8807 8.11929 18 9.5 18H12.5C13.8807 18 15 19.1193 15 20.5C15 21.8807 13.8807 23 12.5 23H9.5C8.11929 23 7 21.8807 7 20.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Text -->
+    <text x="32" y="24" font-family="Arial" font-weight="bold" font-size="18" fill="#333333">
+      SUZANNE AUSTIN
+    </text>
+    <text x="32" y="38" font-family="Arial" font-size="12" fill="#666666">
+      SENIOR REAL ESTATE SPECIALIST
+    </text>
+  </g>
+</svg>
