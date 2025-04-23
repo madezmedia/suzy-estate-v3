@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '../layout/Container';
 import { SectionTitle } from '../ui/SectionTitle';
-import { MapPin, Award, Phone, Globe, CheckCircle, Mail, Calendar } from 'lucide-react';
+import { MapPin, Award, Phone, Globe, CheckCircle, Calendar } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 const areasServed = [
@@ -33,7 +33,7 @@ export function AgentProfile() {
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary-600/10 via-transparent to-transparent z-10" />
                 <img
                   src="https://v3.fal.media/files/koala/7ViNgQyILgsCAED2Usu_w_ComfyUI_temp_xqrsl_00120_.png"
-                  alt="Suzanne Austin"
+                  alt="Suzanne Croutch - Senior Real Estate Specialist"
                   className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-6 z-20">
@@ -54,7 +54,7 @@ export function AgentProfile() {
               {/* Content Column */}
               <div className="p-8 md:p-10 space-y-8">
                 <div>
-                  <h3 className="text-3xl font-bold mb-2 text-gray-900">Suzanne Austin</h3>
+                  <h3 className="text-3xl font-bold mb-2 text-gray-900">Suzanne Croutch</h3>
                   <p className="text-lg text-gray-600 mb-6">Senior Real Estate Specialist</p>
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
@@ -71,7 +71,7 @@ export function AgentProfile() {
                         <Globe className="w-6 h-6 text-primary-600" />
                       </div>
                       <div>
-                        <p className="font-medium text-gray-900">Southern Nest Realty Inc</p>
+                        <p className="font-medium text-gray-900">LPT Realty Inc</p>
                         <p className="text-sm text-gray-600">MLS ID: FAR_2019140415F9</p>
                       </div>
                     </div>

@@ -51,7 +51,7 @@ export function WhyChooseUs() {
     <section className="py-16 bg-gradient-to-b from-primary-50 to-white">
       <Container>
         <SectionTitle
-          subtitle="Discover why seniors and their families trust Suzanne Austin for their real estate needs"
+          subtitle="Discover why seniors and their families trust Suzanne Croutch for their real estate needs"
         >
           Why Choose Suzanne?
         </SectionTitle>
