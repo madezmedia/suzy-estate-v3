@@ -46,7 +46,7 @@ export function AboutPage() {
           >
             <img 
               src="/public/suzanne-austin.jpg" 
-              alt="Suzanne Austin" 
+              alt="Suzanne Croutch" 
               className="rounded-lg shadow-2xl object-cover w-full h-[500px]"
             />
           </motion.div>
@@ -56,7 +56,7 @@ export function AboutPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <SectionTitle>Meet Suzanne Austin</SectionTitle>
+            <SectionTitle>Meet Suzanne Croutch</SectionTitle>
             <p className="text-xl text-gray-700 mb-6">
               A dedicated real estate professional with a passion for empowering seniors through personalized, compassionate service.
             </p>

@@ -67,7 +67,7 @@ export function ListingsPage() {
         {activeTab === 'listings' && (
           <div className="w-full rounded-lg overflow-hidden shadow-warmer mb-16 border border-primary-100">
             <div className="bg-gradient-to-r from-primary-500 to-primary-600 text-white py-3 px-6 flex justify-between items-center">
-              <h3 className="text-lg font-semibold">Suzanne Austin - Property Listings</h3>
+              <h3 className="text-lg font-semibold">Suzanne Croutch - Property Listings</h3>
               <div className="text-sm">Specialized in Senior Living Solutions</div>
             </div>
             
@@ -99,7 +99,7 @@ export function ListingsPage() {
         {activeTab === 'map' && (
           <div className="w-full rounded-lg overflow-hidden shadow-warmer mb-16 border border-primary-100">
             <div className="bg-gradient-to-r from-primary-500 to-primary-600 text-white py-3 px-6 flex justify-between items-center">
-              <h3 className="text-lg font-semibold">Suzanne Austin - Map Search</h3>
+              <h3 className="text-lg font-semibold">Suzanne Croutch - Map Search</h3>
               <div className="text-sm">Find Properties by Location</div>
             </div>
             
@@ -131,7 +131,7 @@ export function ListingsPage() {
         {activeTab === 'comingSoon' && (
           <div className="w-full rounded-lg overflow-hidden shadow-warmer mb-16 border border-primary-100">
             <div className="bg-gradient-to-r from-primary-500 to-primary-600 text-white py-3 px-6 flex justify-between items-center">
-              <h3 className="text-lg font-semibold">Suzanne Austin - Coming Soon</h3>
+              <h3 className="text-lg font-semibold">Suzanne Croutch - Coming Soon</h3>
               <div className="text-sm">Preview Properties Before They Hit the Market</div>
             </div>
             

@@ -39,7 +39,7 @@ export function ContactPage() {
     <div className="min-h-screen pt-24 bg-gray-50">
       <Container>
         <div className="text-center mb-16">
-          <SectionTitle>Connect with Suzanne Austin</SectionTitle>
+          <SectionTitle>Connect with Suzanne Croutch</SectionTitle>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-4">
             Your journey to a seamless retirement transition starts with a conversation. Reach out today.
           </p>
@@ -139,7 +139,7 @@ export function ContactPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-primary-600">Email</h3>
-                <p className="text-gray-700">suzanne@suzanneaustin.com</p>
+                <p className="text-gray-700">suzanne@suzannecroutch.com</p>
               </div>
             </div>
 

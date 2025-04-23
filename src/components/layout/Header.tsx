@@ -22,7 +22,7 @@ export function Header() {
       <Container>
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <img src="/logo.png" alt="Suzanne Austin" className="h-12 w-auto" />
+            <img src="/logo.png" alt="Suzanne Croutch" className="h-12 w-auto" />
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
