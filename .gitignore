@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 .vercel
 public/5146 Elementary View Dr, Charlotte/VIDEO/
+public/5146 Elementary View Dr, Charlotte/VIDEO/*.mp4
