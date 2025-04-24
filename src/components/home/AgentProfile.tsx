@@ -71,8 +71,8 @@ export function AgentProfile() {
                         <Globe className="w-6 h-6 text-primary-600" />
                       </div>
                       <div>
-                        <p className="font-medium text-gray-900">LPT Realty Inc</p>
-                        <p className="text-sm text-gray-600">MLS ID: FAR_2019140415F9</p>
+                        <p className="font-medium text-gray-900">LPT Realty, LLC</p>
+                        <p className="text-sm text-gray-600">License: NC 251125, SC 65256</p>
                       </div>
                     </div>
                   </div>

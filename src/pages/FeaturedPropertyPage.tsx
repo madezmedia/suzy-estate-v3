@@ -90,9 +90,9 @@ Situated in the highly desirable Hucks Landing neighborhood, this home offers a 
   ],
   videoTour: "/5146 Elementary View Dr, Charlotte/VIDEO/5146 Elementary View Dr.mp4",
   agent: {
-    name: "Suzanne Austin",
-    phone: "(704) 650-3493",
-    email: "suzanne@suzyestate.com",
+    name: "Suzanne Croutch",
+    phone: "(704) 819-0620",
+    email: "suesellscarolinas@gmail.com",
     photo: "/suzanne-austin.jpg"
   }
 };
@@ -289,17 +289,14 @@ export function FeaturedPropertyPage() {
               <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Video Tour</h2>
                 <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden h-[500px]">
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/exuK7JecayQ?si=IfuD1s1hwWV2XcJd" 
-                    title="YouTube video player" 
-                    frameBorder="1" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen
+                  <video 
+                    controls
                     className="w-full h-full object-cover"
-                  ></iframe>
+                    poster="/5146 Elementary View Dr, Charlotte/dji_fly_20250418_150150_298_1745003088636_photo_optimized.jpg"
+                  >
+                    <source src={propertyDetails.videoTour} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             )}

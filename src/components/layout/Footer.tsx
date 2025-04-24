@@ -75,11 +75,11 @@ export function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-primary-500" />
-                <span>suzanne@suzannecroutch.com</span>
+                <span>suesellscarolinas@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 mr-3 text-primary-500" />
-                <span>123 Main Street, Fort Mill, SC 29708</span>
+                <span>16 Biltmore Ave, Asheville, NC 28801</span>
               </div>
             </div>
           </div>

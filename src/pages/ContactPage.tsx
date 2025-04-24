@@ -139,7 +139,7 @@ export function ContactPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-primary-600">Email</h3>
-                <p className="text-gray-700">suzanne@suzannecroutch.com</p>
+                <p className="text-gray-700">suesellscarolinas@gmail.com</p>
               </div>
             </div>
 
@@ -149,7 +149,7 @@ export function ContactPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-primary-600">Office Location</h3>
-                <p className="text-gray-700">123 Main Street, Fort Mill, SC 29708</p>
+                <p className="text-gray-700">16 Biltmore Ave, Asheville, NC 28801</p>
               </div>
             </div>
 
