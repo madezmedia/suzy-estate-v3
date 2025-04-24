@@ -2,9 +2,34 @@ import React from 'react';
 import { Container } from '../layout/Container';
 import { SectionTitle } from '../ui/SectionTitle';
 import { Button } from '../ui/Button';
-import { MapPin, Home, Calendar, DollarSign, Maximize, ArrowRight, Tag, Clock } from 'lucide-react';
+import { MapPin, Home, DollarSign, Maximize, ArrowRight, Tag, Clock } from 'lucide-react';
 
 const listings = [
+  {
+    id: "5146-elementary",
+    title: "Expansive Family Haven",
+    address: {
+      street: "5146 Elementary View Dr",
+      city: "Charlotte",
+      state: "NC",
+      zip: "28269"
+    },
+    price: 558000,
+    beds: 5,
+    baths: 4,
+    sqft: 3667,
+    lotSize: "0.3 acres",
+    listDate: "2025-04-18",
+    type: "single_family",
+    status: "for_sale",
+    features: ["Built 2014", "Theater Room", "Open Floor Plan"],
+    photos: [
+      "/5146 Elementary View Dr, Charlotte/dji_fly_20250418_150150_298_1745003088636_photo_optimized.jpg",
+      "/5146 Elementary View Dr, Charlotte/5146 Living and dining room.jpg"
+    ],
+    featured: true,
+    link: "/property/5146-elementary-view-dr"
+  },
   {
     id: "2975784468",
     title: "Elegant Family Home",
@@ -189,13 +214,23 @@ export function FeaturedListings() {
                   ))}
                 </div>
 
-                <Button 
-                  variant="outline" 
-                  className="w-full justify-center group"
-                >
-                  View Details
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </Button>
+                {listing.link ? (
+                  <a 
+                    href={listing.link}
+                    className="inline-block w-full text-center rounded-lg font-semibold px-6 py-3 border-2 border-primary-600 text-primary-600 hover:bg-primary-50 shadow-warm hover:shadow-warmer hover:transform hover:translate-y-[-2px] transition-all duration-200 group"
+                  >
+                    View Details
+                    <ArrowRight className="inline-block w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                  </a>
+                ) : (
+                  <Button 
+                    variant="outline" 
+                    className="w-full justify-center group"
+                  >
+                    View Details
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                )}
               </div>
             </div>
           ))}
