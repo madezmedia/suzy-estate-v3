@@ -288,15 +288,18 @@ export function FeaturedPropertyPage() {
             {propertyDetails.videoTour && (
               <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Video Tour</h2>
-                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-                  <video 
-                    controls 
+                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden h-[500px]">
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/exuK7JecayQ?si=IfuD1s1hwWV2XcJd" 
+                    title="YouTube video player" 
+                    frameBorder="1" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
                     className="w-full h-full object-cover"
-                    poster={propertyDetails.photos[0]}
-                  >
-                    <source src={propertyDetails.videoTour} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                  ></iframe>
                 </div>
               </div>
             )}
